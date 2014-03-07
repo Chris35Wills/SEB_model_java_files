@@ -1,0 +1,1 @@
+energymodels.ContemporaryModel_Precip_aspect_and_slope_fixed

@@ -1,0 +1,1 @@
+energymodels.ContemporaryModel_Precip_winter_snow_limit
