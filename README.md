@@ -1,5 +1,5 @@
-A user friendly distributed surface energy balance model
-========================================================
+A user friendly distributed glacier surface energy balance model
+================================================================
 
 The code provided here makes up a distributed surface energy balance (SEB) model, designed for small Arctic glaciers. 
 
