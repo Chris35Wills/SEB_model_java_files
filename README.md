@@ -168,4 +168,5 @@ Huss, M., Hock, R., Bauder, A. and Funk, M. Conventional versus reference-surfac
 
 Williams, C. 2013. Geometric and surface energy balance change affecting Kårsaglaciären, northern Sweden, over 
 the past century. University of Leeds PhD Thesis.
+
 Status API Training Shop Blog About © 2014 GitHub, Inc. Terms Privacy Security Contact 
