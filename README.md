@@ -1,5 +1,4 @@
-A user friendly distributed glacier surface energy balance model
-================================================================
+# A user friendly distributed glacier surface energy balance model
 
 The code provided here makes up a distributed surface energy balance (SEB) model, designed for small Arctic glaciers. 
 
@@ -21,8 +20,7 @@ to enable scenario based model runs of four types:
 * slope and aspect fixed (surface slope and aspect of the glacier do not change with elevation)
 * fully dynamic surface  (surface slope and aspect change with elevation, as elevation changes as a function of ice melt)
 
-Getting to the core
-===================
+## Getting to the core
 
 If you are just interested in looking at the key files to understand how the main model processing goes are:
 
@@ -32,10 +30,8 @@ SEB_model\source_code\
 * Historical_Model_Precip_winter_snow_limit.java (dynamic version of the historical model)
 * Historical_model_dynamic_LARGE_FILES.java (dynamic version of the historical (LARGE FILES) model)
 
-For the programmers and those wanting to use the model
-======================================================
+## For the programmers and those wanting to use the model
 
-******************************************
 The contents of all properties files is set to the directory of: 
 
 C:\Users\ggwillc\Desktop\ 
@@ -45,7 +41,6 @@ This needs to be changed before the model can be run on the user's system to the
 F:/Melt_modelling/ 
 
 This must be changed prior to model compilation to ensure that a suitable directory is chosen by the user - the specific code affected is highlighted below.
-******************************************
 
 * All source files can be found in:
 	SEB_model\source_code
@@ -115,9 +110,7 @@ This must be changed prior to model compilation to ensure that a suitable direct
 
 * On opening the properties files, model runs (contemporary/historical/historical large files) can be implemented - output paths are hard-wired (as mentioned above) and these will need to be configured manually in the code to suit your system - see the following files:
 
-======================
-Contemporary model run
-======================
+### Contemporary model run
 
 ContemporaryModel_Precip_aspect_and_slope_fixed.java 
 ContemporaryModel_Precip_aspect_fixed.java
@@ -125,9 +118,7 @@ ContemporaryModel_Precip_elev_fixed.java
 ContemporaryModel_Precip_slope_fixed.java
 ContemporaryModel_Precip_winter_snow_limit.java <- this is the dynamic surface model
 
-=====================
-Historical model runs
-=====================
+### Historical model runs
 
 Historical_Model_Aspect_Fixed.java
 Historical_Model_Precip_Elev_Fixed.java
@@ -135,9 +126,7 @@ Historical_Model_Precip_winter_snow_limit.java <- this is the dynamic surface mo
 Historical_Model_Slope_and_Aspect_fixed.java
 Historical_Model_Slope_fixed.java
 
-===================================
-Historical (large files) model runs***
-===================================
+### Historical (large files) model runs***
 
 Historical_Model_Aspect_Fixed_LARGE_FILES.java
 Historical_Model_Slope_and_Aspect_fixed_LARGE_FILES.java
@@ -147,15 +136,13 @@ Historical_model_slope_fixed_LARGE_FILES.java
 
 *** Each of these files contains a preamble explaining how "Historical (large files)" differs to the normal "Historical"
 
-Things to be aware of
-=====================
+## Things to be aware of
 
 * There are a number of hard-wired path directories that will need altering - sorry! These should be altered to suit your system. If you encounter errors when using the model, this should be the first thing to investigate.
 * The code available here contains the basis for a variety of buttons and methods - some of which are obsolete.
 * If using the open surface buttons, these will allow any ASCII of the correct format to be opened - for example, if using the "Open Elevation surface" button, you are not stopped from opening any ASCII e.g.  59_hillshade.txt (the hillshade ASCII) from the sample_data_files folder. This will be read in as it is of the correct format but the values will be representative of hillshade and not elevation. If then using the surface for calculating slope or aspect through the tools available in "Methods", this will result in the calculation of incorrect values. A more complex file opening dialogue could be developed to restrict which files can be opened by which buttons.
       
-References
-==========
+## References
 
 Elsberg, D.H., Harrison, W.D., Echelmeyer, K.A. and Krimmel, R.M. 2001 Quantifying the effects of climate and surface 
 change on glacier mass balance. Journal of Glaciology, 47(159), pp649–658 (doi: 10.3189/172756501781831783)
